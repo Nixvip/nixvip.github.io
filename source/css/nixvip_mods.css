@@ -31,6 +31,10 @@ p {
   font-family: "K2D", sans-serif;
 }
 
+.col {
+  margin-bottom: 50px;
+}
+
 .btn{
   font-family: "K2D", sans-serif;
   margin-top: 20px;
