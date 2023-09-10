@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=K2D:wght@100;300&display=swap');
 
+* {
+  font-family: "K2D", sans-serif;
+}
+
 body {
   background-image: url(../img/Background.png);
 }
@@ -24,18 +28,18 @@ body {
 }
 
 .top {
-  font-family: "K2D", sans-serif;
-  color: rgba(255, 137, 122, 0.74);
+  color: #fc7e7ee1;
   font-weight: bold;
   font-size: 90px;
+  text-shadow: -1px -1px 0 #000000e1, 1px -1px 0 #000000e1, -1px 1px 0 #000000e1, 1px 1px 0 #000000e1;
 }
 
 .top_b {
-  font-family: "K2D", sans-serif;
   font-size: 18px;
-  color: aliceblue;
+  color: #ffffffe1;
   margin-top: -10px;
   margin-right: 190px;
+  text-shadow: -1px -1px 0 #000000e1, 1px -1px 0 #000000e1, -1px 1px 0 #000000e1, 1px 1px 0 #000000e1;
 }
 
 .iconA {
@@ -45,16 +49,6 @@ body {
 
 .icon {
   margin-bottom: 21px;
-}
-
-.logo {
-  width: 200px;
-  height: 200px;
-  background-image: url("../img/nixvip_m_w.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin: auto;
-  margin-top: 30px;
 }
 
 @media screen and (max-width: 600px)
@@ -74,4 +68,23 @@ body {
     margin-bottom: 15px;
   }
   
+}
+
+@media screen and (max-width: 300px)
+{
+  .top{
+    font-size: 48px;
+  }
+  .top_b{
+    font-size: 14px;
+    margin-top: 0px;
+    margin-right: 0px;
+  }
+  .icon{
+    width: 40px;
+    height: 40px;
+  }
+  .iconA{
+    margin: 4px;
+  }
 }
