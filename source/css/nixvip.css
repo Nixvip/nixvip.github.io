@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=K2D:wght@100;300&display=swap');
 
 body {
   background-image: url(../img/Background.png);
@@ -24,18 +24,23 @@ body {
 }
 
 .top {
+  font-family: "K2D", sans-serif;
   color: rgba(255, 137, 122, 0.74);
+  font-weight: bold;
   font-size: 90px;
 }
 
 .top_b {
+  font-family: "K2D", sans-serif;
+  font-size: 18px;
   color: aliceblue;
-  margin-top: -20px;
-  margin-right: 195px;
+  margin-top: -10px;
+  margin-right: 190px;
 }
 
 .iconA {
-  margin: 7px;
+  margin: 10px;
+  margin-top: -10px;
 }
 
 .icon {
@@ -55,12 +60,12 @@ body {
 @media screen and (max-width: 600px)
 {
   .top{
-    font-size: 56px;
+    font-size: 64px;
   }
   .top_b{
     font-size: 14px;
-    margin-top: -15px;
-    margin-right: 90px;
+    margin-top: -10px;
+    margin-right: 120px;
   }
   .iconA{
     margin: 5px;
