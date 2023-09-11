@@ -1,90 +1,106 @@
 @import url('https://fonts.googleapis.com/css2?family=K2D:wght@100;300&display=swap');
 
+
 * {
+  margin: 0;
+  padding: 0;
   font-family: "K2D", sans-serif;
 }
 
 body {
-  background-image: url(../img/Background.png);
+  overflow: hidden;
 }
 
-.background-color-layer {
-  background-size: cover;
-  opacity: 0.15;
-  background-repeat: no-repeat;
-  position: absolute;
-  z-index: -1;
-  top: 0;
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
   width: 100%;
-  height: 100%;
-  left: 0;
-  right: 0;
-  bottom: 30%;
-  box-shadow: inset 0 -40px 60px 10px #a3a3a3;
+  height: 100vh;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/background.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
 }
 
-.header {
-  margin-bottom: 30px;
-}
-
-.top {
-  color: #fc7e7ee1;
+h1.H1 {
+  color: #d6b7fd;
   font-weight: bold;
-  font-size: 90px;
+  font-size: 12vh;
   text-shadow: -1px -1px 0 #000000e1, 1px -1px 0 #000000e1, -1px 1px 0 #000000e1, 1px 1px 0 #000000e1;
 }
 
-.top_b {
-  font-size: 18px;
-  color: #ffffffe1;
-  margin-top: -10px;
-  margin-right: 190px;
+h1.H2 {
+  margin-top: -1vh;
+  margin-left: 0.5vh;
+  font-size: 2.2vh;
+  color: #ffffff;
   text-shadow: -1px -1px 0 #000000e1, 1px -1px 0 #000000e1, -1px 1px 0 #000000e1, 1px 1px 0 #000000e1;
 }
 
-.iconA {
-  margin: 10px;
-  margin-top: -10px;
+.header{
+  margin-bottom: 1vh;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
 }
 
 .icon {
-  margin-bottom: 21px;
+  margin: 1.2vh;
+  width: 7vh;
+  height: 7vh;
 }
 
-@media screen and (max-width: 600px)
-{
-  .top{
-    font-size: 64px;
+@media screen and (max-width: 600px){
+  h1.H1{
+    font-size: 9vh;
   }
-  .top_b{
-    font-size: 14px;
-    margin-top: -10px;
-    margin-right: 120px;
-  }
-  .iconA{
-    margin: 5px;
-  }
-  .icon {
-    margin-bottom: 15px;
-  }
-  
-}
-
-@media screen and (max-width: 300px)
-{
-  .top{
-    font-size: 48px;
-  }
-  .top_b{
-    font-size: 14px;
-    margin-top: 0px;
-    margin-right: 0px;
+  h1.H2{
+    
+    font-size: 2.2vh;
   }
   .icon{
-    width: 40px;
-    height: 40px;
+    margin: 1vh;
+    width: 6vh;
+    height: 6vh;
   }
-  .iconA{
-    margin: 4px;
+}
+
+@media screen and (max-width: 300px){
+  h1.H1{
+    font-size: 8vh;
+    text-align: center;
   }
+  h1.H2{
+    margin-top: 0vh;
+    margin-left: 0vh;
+    font-size: 2.2vh;
+    text-align: center;
+  }
+  .icon{
+    margin: 1vh;
+    width: 6vh;
+    height: 6vh;
+  }
+}
+
+section i{
+  position: absolute;
+  background: #FFF;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #FFF,
+  0 0 20px #FFF,
+  0 0 40px #FFF,
+  0 0 80px #FFF;
+  animation: animate linear infinite;
+}
+@keyframes animate{
+  0%{opacity: 0;}
+  10%{opacity: 1;}
+  90%{opacity: 1;}
+  100%{opacity: 0;}
 }
