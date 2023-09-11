@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="theme-color" content="#0065fd">
+    <meta HTTP-EQUIV="Refresh" CONTENT="0;URL=https://discord.gg/7P97cE2cgF"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" type="image/png" href="https://nixvip.github.io/source/img/discord_icon.png">
+    <link rel="stylesheet" href="https://nixvip.github.io/source/css/nixvip.css"/>
+    <!-- HTML Meta Tags -->
+    <title>เข้าร่วมเซิร์ฟเวอร์ Discord ของ Bear ComeBack Community!</title>
+    <meta name="description" content="พบกับชุมชน Bear ComeBack Community บน Discord">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://nixvip.github.io/discord">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="เข้าร่วมเซิร์ฟเวอร์ Discord ของ Bear ComeBack Community!">
+    <meta property="og:description" content="พบกับชุมชน Bear ComeBack Community บน Discord">
+    <meta property="og:image" content="https://nixvip.github.io/source/img/discord_ogm.png">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="nixvip.github.io">
+    <meta property="twitter:url" content="https://nixvip.github.io/discord">
+    <meta name="twitter:title" content="เข้าร่วมเซิร์ฟเวอร์ Discord ของ Bear ComeBack Community!">
+    <meta name="twitter:description" content="พบกับชุมชน Bear ComeBack Community บน Discord">
+    <meta name="twitter:image" content="https://nixvip.github.io/source/img/discord_ogm.png">
+    <style>
+        h1 {
+            font-size: 20vh;
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+    </section>
+    <script type="text/javascript">
+        function disableselect(e)
+        {
+            if (omitformtags.indexOf(e.target.tagName.toLowerCase())==-1)
+            return false
+        }
+        function reEnable()
+        {
+            return true
+        }
+        if(typeof document.onselectstart!="undefined")
+        {
+            document.onselectstart=new Function ("return false")
+        }
+        else
+        {
+            document.onmousedown=disableselect;
+            document.onmouseup=reEnable;
+        }
+    </script>
+    <script>
+        function stars(){
+            const count = 200;
+            const section = document.querySelector('section');
+            var i = 0;
+    
+            while (i < count){
+                const star = document.createElement('i');
+                const x = Math.floor(Math.random() * window.innerWidth)
+                const y = Math.floor(Math.random() * window.innerHeight)
+    
+                const size = Math.random() * 4;
+                star.style.left = x+'px';
+                star.style.top = y+'px';
+                star.style.width = 1+size+'px';
+                star.style.height = 1+size+'px';
+
+                const duration = Math.random() * 2;
+
+                star.style.animationDuration = 2+duration+'s';
+                star.style.animationDelay = duration+'s';
+    
+                section.appendChild(star); 
+                i++
+            }
+        }
+        stars();
+    </script>
+</body>
+</html>
