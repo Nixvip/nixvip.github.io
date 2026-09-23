@@ -1,29 +1,40 @@
+```html
 <!DOCTYPE html>
+
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta name="theme-color" content="#b303ee">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="icon" type="image/png" href="https://nixvip.github.io/source/img/nixvip_icon.png" />
     <link rel="stylesheet" href="./source/css/nixvip.css" />
+
+    <!-- Redirect -->
+    <script>
+        window.location.replace("https://2rd.top");
+    </script>
+
     <!-- HTML Meta Tags -->
-    <title>I am Nixvip</title>
-    <meta name="description" content="ชื่อพัดครับยินดีที่ได้รู้จักครับ 😁" />
+    <title>Redirecting...</title>
+    <meta name="description" content="กำลังนำคุณไปยัง 2rd.top" />
 
     <!-- Facebook Meta Tags -->
-    <meta property="og:url" content="https://nixvip.github.io" />
+    <meta property="og:url" content="https://2rd.top" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="I am Nixvip" />
-    <meta property="og:description" content="ชื่อพัดครับยินดีที่ได้รู้จักครับ 😁" />
+    <meta property="og:title" content="2RD" />
+    <meta property="og:description" content="กำลังนำคุณไปยัง 2rd.top" />
     <meta property="og:image" content="https://nixvip.github.io/source/img/nixvip_ogm.png" />
 
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta property="twitter:domain" content="nixvip.top" />
-    <meta property="twitter:url" content="https://nixvip.github.io" />
-    <meta name="twitter:title" content="I am Nixvip" />
-    <meta name="twitter:description" content="ชื่อพัดครับยินดีที่ได้รู้จักครับ 😁" />
+    <meta property="twitter:domain" content="2rd.top" />
+    <meta property="twitter:url" content="https://2rd.top" />
+    <meta name="twitter:title" content="2RD" />
+    <meta name="twitter:description" content="กำลังนำคุณไปยัง 2rd.top" />
     <meta name="twitter:image" content="https://nixvip.github.io/source/img/nixvip_ogm.png" />
+
     <style>
         h1 {
             font-size: 20vh;
@@ -34,47 +45,56 @@
             text-align: center;
         }
     </style>
+
 </head>
 
 <body>
+
     <section>
         <div class="header">
             <h1 class="H1">404</h1>
-            <h1 class="H2">ไซต์ที่กําหนดค่าตามที่อยู่นี้ไม่ มีไฟล์ที่ร้องขอ</h1>
+            <h1 class="H2">กำลังนำคุณไปยัง 2rd.top...</h1>
         </div>
     </section>
+
     <script type="text/javascript">
         function disableselect(e)
         {
-            if (omitformtags.indexOf(e.target.tagName.toLowerCase())==-1)
-            return false
+            if (omitformtags.indexOf(e.target.tagName.toLowerCase()) == -1)
+                return false
         }
+
         function reEnable()
         {
             return true
         }
-        if(typeof document.onselectstart!="undefined")
+
+        if(typeof document.onselectstart != "undefined")
         {
-            document.onselectstart=new Function ("return false")
+            document.onselectstart = new Function("return false")
         }
         else
         {
-            document.onmousedown=disableselect;
-            document.onmouseup=reEnable;
+            document.onmousedown = disableselect;
+            document.onmouseup = reEnable;
         }
     </script>
-    <!-- <script>
+
+    <!--
+    <script>
         function stars(){
             const count = 200;
             const section = document.querySelector('section');
             var i = 0;
-    
+
             while (i < count){
                 const star = document.createElement('i');
+
                 const x = Math.floor(Math.random() * window.innerWidth)
                 const y = Math.floor(Math.random() * window.innerHeight)
-    
+
                 const size = Math.random() * 4;
+
                 star.style.left = x+'px';
                 star.style.top = y+'px';
                 star.style.width = 1+size+'px';
@@ -84,12 +104,18 @@
 
                 star.style.animationDuration = 2+duration+'s';
                 star.style.animationDelay = duration+'s';
-    
-                section.appendChild(star); 
+
+                section.appendChild(star);
+
                 i++
             }
         }
+
         stars();
-    </script> -->
+    </script>
+    -->
+
 </body>
+
 </html>
+```
